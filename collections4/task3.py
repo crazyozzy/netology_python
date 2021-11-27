@@ -7,8 +7,7 @@ queries = [
     'курс по питону',
     'сериалы про спорт',
     'тест',
-    'Тест 4 4 4',
-    'Тест 5 5 5 5'
+    'Тест 4 4 4'
     ]
 
 dict = {}
@@ -21,4 +20,4 @@ for list_temp in queries:
 
 # print(dict)
 for items in dict:
-    print(f"Поисковых запросов из {items} слов: {dict.get(items) * 100}%")
+    print(f"Поисковых запросов из {items} слов: {round(dict.get(items) * 100, 1)}%")
